@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tally Elite UAE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- TOP MENU BAR -->
+    <header class="topbar">
+      <nav class="menu-bar">
+        <button class="menu-btn" data-menu="company">
+          <span>Company</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <button class="menu-btn" data-menu="master">
+          <span>Master</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <button class="menu-btn" data-menu="transaction">
+          <span>Transaction</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <button class="menu-btn" data-menu="report">
+          <span>Report</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <button class="menu-btn" data-menu="admin">
+          <span>Admin</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <button class="menu-btn exit-btn">Exit</button>
+      </nav>
+    </header>
+
+    <!-- DROPDOWN MENUS -->
+    <div class="dropdown-container">
+      <div class="dropdown-menu" data-menu-id="company">
+        <a href="#" class="dropdown-item">Create Company</a>
+        <a href="#" class="dropdown-item">Edit Company</a>
+        <a href="#" class="dropdown-item">Delete Company</a>
+        <a href="#" class="dropdown-item">Company Info</a>
+      </div>
+
+      <div class="dropdown-menu" data-menu-id="master">
+        <a href="#" class="dropdown-item">Chart of Accounts</a>
+        <a href="#" class="dropdown-item">Cost Centers</a>
+        <a href="#" class="dropdown-item">Units</a>
+        <a href="#" class="dropdown-item">Stock Items</a>
+        <a href="#" class="dropdown-item">Customers</a>
+        <a href="#" class="dropdown-item">Vendors</a>
+      </div>
+
+      <div class="dropdown-menu" data-menu-id="transaction">
+        <a href="#" class="dropdown-item">Journal Entry</a>
+        <a href="#" class="dropdown-item">Invoice</a>
+        <a href="#" class="dropdown-item">Purchase Order</a>
+        <a href="#" class="dropdown-item">Payment</a>
+        <a href="#" class="dropdown-item">Receipt</a>
+      </div>
+
+      <div class="dropdown-menu" data-menu-id="report">
+        <a href="#" class="dropdown-item">Balance Sheet</a>
+        <a href="#" class="dropdown-item">Profit & Loss</a>
+        <a href="#" class="dropdown-item">Trial Balance</a>
+        <a href="#" class="dropdown-item">Sales Report</a>
+        <a href="#" class="dropdown-item">Inventory Report</a>
+      </div>
+
+      <div class="dropdown-menu" data-menu-id="admin">
+        <a href="#" class="dropdown-item">Users</a>
+        <a href="#" class="dropdown-item">Roles & Permissions</a>
+        <a href="#" class="dropdown-item">System Settings</a>
+        <a href="#" class="dropdown-item">Backups</a>
+        <a href="#" class="dropdown-item">Audit Log</a>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- COMPANY NAME DISPLAY -->
+      <div class="company-display">
+        <h1 class="company-name">V-JUMA</h1>
+        <p class="company-subtitle">Your Business Hub</p>
+      </div>
+
+      <!-- INFO BAR -->
+      <div class="info-bar">
+        <div class="info-item">
+          <span class="label">User:</span>
+          <span class="value">manoj</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Company:</span>
+          <span class="value">Tally Elite UAE</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Date:</span>
+          <span class="value">10/10/2026</span>
+        </div>
+      </div>
+
+      <!-- PROFILE SECTION -->
+      <div class="profile-section">
+        <h2>Company Profile</h2>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" value="Tally Elite UAE" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Registration Number</label>
+            <input type="text" value="1234567890" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" value="info@tallyuae.com" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" value="+971 4 XXX XXXX" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Address</label>
+            <input type="text" value="Dubai, UAE" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Currency</label>
+            <select class="form-input">
+              <option selected>AED</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Financial Year Start</label>
+            <input type="date" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Tax ID</label>
+            <input type="text" placeholder="VAT Number" class="form-input">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary">Save Changes</button>
+          <button class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
